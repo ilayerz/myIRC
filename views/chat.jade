@@ -1,0 +1,35 @@
+head
+    title Chat
+    link(rel="stylesheet", href="/stylesheets/button.css")
+    link(rel="stylesheet", href="/stylesheets/chat.css")
+    script(src="/socket.io/socket.io.js")
+    script(src="https://code.jquery.com/jquery-1.11.1.js")
+    script(src='/javascripts/rebound/dist/rebound.js')
+    
+    script.
+        var user = {
+            pseudo: '#{user}'
+        }
+body
+    .container
+        .sidenav#mySidenav
+            img#logo(src='https://cdn.freebiesupply.com/logos/large/2x/socket-io-logo-png-transparent.png')
+            h3 #{user}
+            a(href='/users') Mon Compte
+            a(href='/logout') Se déconnecter
+        div.chat#chat   
+            div.tab-container
+                button.hamburger.hamburger--collapse(type="button", onclick='nav()')
+                    span.hamburger-box
+                        span.hamburger-inner
+                ul.tabs.clearfix
+                    li.active#general Général
+                    
+            
+            ul#messages
+            form(action="")
+                input#m(autocomplete="off", placeholder="Envoyer un message..")
+                button#f Send
+    script(src='/javascripts/anim.js')
+    script(src='/javascripts/main.js')
+        

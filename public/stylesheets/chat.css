@@ -1,0 +1,208 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 13px Helvetica, Arial; }
+        form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+        form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; cursor: pointer; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li { padding: 5px 10px; }
+        #messages li:nth-child(odd) { background: #eee; }
+        .bold { font-weight: bold;}
+/* The sidebar menu */
+.sidenav {
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 160px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 20px;
+        transition: 0.5s;
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        width: 500px;
+    }
+    h3{
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    /* Style page content */
+    .chat {
+        margin-left: 0px; /* Same as the width of the sidebar */
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    #m{
+            width: 79%;
+    }
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    #f{
+            transition: 0.5s;
+            width: 19%;
+    }
+    #logo{
+        width: 70px;
+        height: 50px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    #mySidenav{
+        width: 0px;
+    }
+
+    body{
+        background : #efefef;
+        font : .8em sans-serif;
+        margin: 0;
+      }
+
+    .tab-container{
+        background : #111;
+        margin: 0;
+        padding: 0;
+        max-height: 39px;
+      }
+      
+      ul.tabs{
+        margin: 0;
+        list-style-type : none;
+        line-height : 35px;
+        max-height: 35px;
+        overflow: hidden;
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 15px;
+      }
+      
+      ul.tabs > li.active{
+        z-index: 2;
+        background: #efefef;
+      }
+      
+      ul.tabs > li.active:before{
+        border-color : transparent #efefef transparent transparent;
+      }
+      
+      
+      ul.tabs > li.active:after{
+        border-color : transparent transparent transparent #efefef;
+      }
+      
+      ul.tabs > li{
+        cursor: pointer;
+        float : right;
+        margin : 5px -10px 0;
+        border-top-right-radius: 25px 170px;
+        border-top-left-radius: 20px 90px;
+        padding : 0 30px 0 25px;
+        height: 170px;
+        background: #ddd;
+        position : relative;
+        box-shadow: 0 10px 20px rgba(0,0,0,.5);
+        max-width : 200px;
+      }
+      
+      ul.tabs > li > p{
+        display: inline-block;
+        max-width:100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        color: #222;
+      }
+      
+      ul.tabs > li:before, ul.tabs > li:after{
+        content : '';
+        background : transparent;
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        border-width: 10px;
+        top: 0px;
+        border-style : solid;
+        position : absolute;
+      }
+      
+      ul.tabs > li:before{
+        border-color : transparent #ddd transparent transparent;
+        -webkit-transform : rotate(48deg);
+        left: -23px;
+      }
+      
+      ul.tabs > li:after{
+        border-color : transparent transparent transparent #ddd;
+        -webkit-transform : rotate(-48deg);
+        right: -17px;
+      }
+      
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+#f {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+#f:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+	background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6',GradientType=0);
+	background-color:#1e62d0;
+}
+#f:active {
+	position:relative;
+    top:1px;
+}
+.hamburger{
+    outline: none;
+}

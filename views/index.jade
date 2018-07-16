@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .video
+    video(autoplay, muted, loop, id="myVideo")
+      source(src="/video/video.mp4", type="video/mp4")
+  h1.title CHAT
+  .log
+    if (!user)
+      a.title(href='/login') Se connecter
+      a.title(href='/register') M'inscrire
+    if (user)
+      p.title Vous êtes actuellement connecter sous le pseudo #{user.username} 
+      a.title(href='/chat') Chat
+      a.title(href='/logout') Se déconnecter

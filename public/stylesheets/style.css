@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+.video{
+  background: url('/images/filtre.png');
+  /*min-height: 1000px;*/
+}
+.title{
+  font-family: 'Kanit', sans-serif;
+  color: white;
+}
+.log > a{
+  padding: 20px;
+}

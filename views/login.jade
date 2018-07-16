@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .video
+    video(autoplay, muted, loop, id="myVideo")
+      source(src="/video/video.mp4", type="video/mp4")
+  .container
+    form.form-signin(role='form', action='/login', method='post')
+      h2.form-signin-heading.title Please sign in
+      label.title.sr-only(for='inputEmail')
+      input.form-control(type='text', name='username', id='inputEmail', placeholder='Username', required, autofocus)
+      input.form-control(type='password', name='password', id='inputPassword', placeholder='Password')
+      button.btn.btn-lg.btn-primary.btn-block(type='submit') LOGIN
